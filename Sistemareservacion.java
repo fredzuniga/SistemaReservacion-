@@ -140,7 +140,7 @@ public class Sistemareservacion {
                     System.out.println("Cantidad de reservaciones " + lista_reservaciones.size());
                     double cobro_total = 0;
                     for(int i = 0; i < lista_reservaciones.size(); i++){
-                        cobro_total = lista_reservaciones.get(i).getCosto_reservacion();
+                        cobro_total += lista_reservaciones.get(i).getCosto_reservacion();
                     }
                     System.out.println("Total cobrado: " + cobro_total);
                     
